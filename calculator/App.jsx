@@ -7,29 +7,29 @@ function App(){
 <div className="number"></div>
     </div>
 <div className="row">
-  <button>7</button>
-  <button>8</button>
-  <button>9</button>
-  <button>×</button>
+  <button className="btn">7</button>
+  <button className="btn">8</button>
+  <button className="btn">9</button>
+  <button className="btn">×</button>
 </div>
 <div className="row">
-  <button>4</button>
-  <button>5</button>
-  <button>6</button>
-  <button>-</button>
+  <button className="btn">4</button>
+  <button className="btn">5</button>
+  <button className="btn">6</button>
+  <button className="btn">-</button>
 </div>
 
 <div className="row">
-  <button>1</button>
-  <button>2</button>
-  <button>3</button>
-  <button>+</button>
+  <button className="btn">1</button>
+  <button className="btn">2</button>
+  <button className="btn">3</button>
+  <button className="btn">+</button>
 </div>
 <div className="row">
-  <button>c</button>
-  <button>0</button>
-  <button>=</button>
-  <button>÷</button>
+  <button className="btn">c</button>
+  <button className="btn">0</button>
+  <button className="btn">=</button>
+  <button className="btn">÷</button>
 </div>
     </div>
   )

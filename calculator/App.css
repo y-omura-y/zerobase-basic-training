@@ -1,0 +1,23 @@
+/* ボタンの行 */
+.row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+/* ボタン本体 */
+.btn {
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  border: none;
+  border-radius: 8px;
+  background: #4a4c49;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ボタンホバー */
+.btn:hover {
+  background: #666;
+}
