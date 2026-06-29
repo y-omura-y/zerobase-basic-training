@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #ffffff;
+}
+
+/* 電卓全体の枠 */
+.calc {
+  background: #718fc9;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/* ディスプレイ */
+.display {
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  text-align: right;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  min-width: 240px;
+  min-height: 50px;
+}
+
+/* ボタンの行 */
+.row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+/* ボタン本体 */
+.btn {
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  border: none;
+  border-radius: 8px;
+  background: #4a4c49;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ボタンホバー */
+.btn:hover {
+  background: #666;
+}
