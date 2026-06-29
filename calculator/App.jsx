@@ -2,10 +2,9 @@ function App(){
 
   return(
     <div className="calc">
-      <header>電卓</header>
-    <div className="display">
+    <div className="display"></div>
 <div className="number"></div>
-    </div>
+
 <div className="row">
   <button className="btn">7</button>
   <button className="btn">8</button>
