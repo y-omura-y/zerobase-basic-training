@@ -1,4 +1,9 @@
+
 function App(){
+
+  function handleKey(key){
+    console.log(key);
+  }
 
   return(
     <div className="calc">
@@ -6,29 +11,30 @@ function App(){
 <div className="number"></div>
 
 <div className="row">
-  <button className="btn">7</button>
-  <button className="btn">8</button>
-  <button className="btn">9</button>
-  <button className="btn">×</button>
-</div>
-<div className="row">
-  <button className="btn">4</button>
-  <button className="btn">5</button>
-  <button className="btn">6</button>
-  <button className="btn">-</button>
+  <button className="btn" onClick={() => handleKey("7")}>7</button>
+  <button className="btn" onClick={() => handleKey("8")}>8</button>
+  <button className="btn" onClick={() => handleKey("9")}>9</button>
+  <button className="btn" onClick={() => handleKey("")}>×</button>
 </div>
 
 <div className="row">
-  <button className="btn">1</button>
-  <button className="btn">2</button>
-  <button className="btn">3</button>
-  <button className="btn">+</button>
+  <button className="btn" onClick={() => handleKey("4")}>4</button>
+  <button className="btn" onClick={() => handleKey("5")}>5</button>
+  <button className="btn" onClick={() => handleKey("6")}>6</button>
+  <button className="btn" onClick={() => handleKey("")}>-</button>
+</div>
+
+<div className="row">
+  <button className="btn" onClick={() => handleKey("1")}>1</button>
+  <button className="btn" onClick={() => handleKey("2")}>2</button>
+  <button className="btn" onClick={() => handleKey("3")}>3</button>
+  <button className="btn" onClick={() => handleKey("")}>+</button>
 </div>
 <div className="row">
-  <button className="btn">c</button>
-  <button className="btn">0</button>
-  <button className="btn">=</button>
-  <button className="btn">÷</button>
+  <button className="btn" onClick={() => handleKey("")}>c</button>
+  <button className="btn" onClick={() => handleKey("0")}>0</button>
+  <button className="btn" onClick={() => handleKey("")}>=</button>
+  <button className="btn" onClick={() => handleKey("")}>÷</button>
 </div>
     </div>
   )
