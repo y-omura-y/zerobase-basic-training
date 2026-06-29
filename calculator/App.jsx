@@ -11,6 +11,12 @@ function handleOperator(op){
   setDisplay("0");
 }
 
+function handleClear(){
+  setMemory(null);
+  setOperator(null);
+  setDisplay("0");
+}
+
   function handleKey(key){
     if(display === "0"){
       setDisplay(key);
@@ -60,7 +66,7 @@ function handleOperator(op){
   <button className="btn" onClick={() => handleOperator("+")}>+</button>
 </div>
 <div className="row">
-  <button className="btn" onClick={() => handleKey("")}>c</button>
+  <button className="btn" onClick={() => handleClear()}>c</button>
   <button className="btn" onClick={() => handleKey("0")}>0</button>
   <button className="btn" onClick={() => handleEqual()}>=</button>
   <button className="btn" onClick={() => handleOperator("÷")}>÷</button>
