@@ -1,13 +1,19 @@
+const {useState} = React;
 
 function App(){
+const [display,setDisplay] = useState("0");
 
   function handleKey(key){
-    console.log(key);
+    if(display === "0"){
+      setDisplay(key);
+    }else{
+      setDisplay(display + key);
+    }
   }
 
   return(
     <div className="calc">
-    <div className="display"></div>
+    <div className="display">{display}</div>
 <div className="number"></div>
 
 <div className="row">
