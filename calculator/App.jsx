@@ -6,6 +6,7 @@ const [memory,setMemory] = useState(null);
 const [operator,setOperator] = useState(null);
 
 function handleOperator(op){
+  if(operator!== null)return;
   setMemory(display);
   setOperator(op);
   setDisplay("0");
