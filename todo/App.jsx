@@ -11,6 +11,13 @@ function App() {
     setInput("");
   }
 
+  function deleteTask(indexToDelete){
+    const newTasks = tasks.filter((task,index)=>{
+      return index !== indexToDelete;
+    });
+    setTasks(newTasks);
+  }
+
   return (
     <div>
       <h1>Todo List</h1>
@@ -26,15 +33,13 @@ function App() {
         <button onClick={addTask}>追加</button>
       </div>
 
-      <p>入力：{input}</p>
-
       <div className="task-box">
         <ul>
           {tasks.map((task, index) => (
             <li key={index}>
               <input type="checkbox" />
               <h2>{task}</h2>
-              <button>けす</button>
+              <button onClick={()=> deleteTask(index)}>けす</button>
             </li>
           ))}
         </ul>
